@@ -19,8 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'dancing': ['Dancing Script', 'cursive'],
-				'inter': ['Inter', 'sans-serif'],
+				'sans': ['Inter', 'sans-serif'],
+				'sans-condensed': ['Bebas Neue', 'sans-serif'],
+				'mono': ['JetBrains Mono', 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -56,23 +57,9 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
-				coffee: {
-					bean: 'hsl(var(--coffee-bean))',
-					cream: 'hsl(var(--coffee-cream))',
-					steam: 'hsl(var(--coffee-steam))',
-					gold: 'hsl(var(--coffee-gold))',
-					dark: 'hsl(var(--coffee-dark))'
-				}
+				'off-white': '#F9F9F9',
+				'soft-cream': '#F3F1E8',
+				'pure-black': '#000000',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
