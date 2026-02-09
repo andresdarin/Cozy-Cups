@@ -1,86 +1,58 @@
+import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
-import heroImage from "@/assets/hero-coffee.jpg";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Cozy coffee atmosphere"
-          className="w-full h-full object-cover opacity-80"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-coffee-dark/90 via-background/70 to-coffee-dark/90" />
-      </div>
+    <section className="relative h-screen w-full overflow-hidden flex flex-col md:flex-row">
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Main Heading */}
-          <h1 className="font-dancing text-6xl md:text-8xl font-bold coffee-gold leading-tight">
-            Cozy Cups
-          </h1>
-          
-          {/* Subheading */}
-          <h2 className="font-dancing text-3xl md:text-4xl text-coffee-cream mb-6">
-            Academia de Baristas & Cafetería Artesanal
-          </h2>
-
-          {/* Description */}
-          <p className="text-xl md:text-2xl text-coffee-cream/90 max-w-3xl mx-auto leading-relaxed">
-            Aprende de los mejores baristas y sumérgete en el fascinante mundo del café. 
-            Desde técnicas de extracción hasta arte latte, te convertiremos en un experto.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button 
-              variant="golden" 
-              size="lg" 
-              className="text-lg px-8 py-6 shadow-glow transition-bounce hover:scale-105"
-            >
-              Ver Nuestros Cursos
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-background/10 hover:bg-background/20 border-coffee-cream text-coffee-cream"
-            >
-              <Play className="mr-2 h-5 w-5" />
-              Ver Demo
-            </Button>
-          </div>
-
-          {/* Stats */}
-          <div className="pt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="font-dancing text-4xl font-bold coffee-gold">500+</div>
-              <div className="text-coffee-cream">Estudiantes</div>
-            </div>
-            <div className="text-center">
-              <div className="font-dancing text-4xl font-bold coffee-gold">15+</div>
-              <div className="text-coffee-cream">Cursos</div>
-            </div>
-            <div className="text-center">
-              <div className="font-dancing text-4xl font-bold coffee-gold">10</div>
-              <div className="text-coffee-cream">Años</div>
-            </div>
-            <div className="text-center">
-              <div className="font-dancing text-4xl font-bold coffee-gold">98%</div>
-              <div className="text-coffee-cream">Satisfacción</div>
-            </div>
-          </div>
+      {/* Left: Image */}
+      <div className="w-full md:w-1/2 h-1/2 md:h-full relative overflow-hidden group">
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80")' }}
+        >
+          <div className="absolute inset-0 bg-black/10" />
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="w-6 h-10 border-2 border-coffee-gold rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-coffee-gold rounded-full animate-bounce mt-2"></div>
+      {/* Right: Content */}
+      <div className="w-full md:w-1/2 h-1/2 md:h-full bg-off-white flex flex-col justify-center px-8 md:px-20 relative z-10">
+
+        {/* Badge */}
+        <div className="absolute top-10 right-10 md:top-20 md:right-20 w-24 h-24 md:w-32 md:h-32 rounded-full border border-black flex items-center justify-center animate-spin-slow">
+            <svg viewBox="0 0 100 100" className="w-full h-full p-2">
+                <path id="curve" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+                <text className="text-[11px] font-mono uppercase tracking-[0.2em]">
+                    <textPath href="#curve">
+                        100% Natural Product • Organic Coffee •
+                    </textPath>
+                </text>
+            </svg>
+            <div className="absolute w-2 h-2 bg-black rounded-full" />
+        </div>
+
+        <span className="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">
+          Est. 2024
+        </span>
+
+        <h1 className="font-sans-condensed text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-[0.9] mb-8">
+          Pure <br/>
+          <span className="text-gray-400">Roast</span> <br/>
+          Experience
+        </h1>
+
+        <p className="font-mono text-xs md:text-sm text-gray-600 max-w-sm leading-relaxed mb-10 border-l border-black pl-6">
+          Sourced from the finest highland plantations. Roasted in small batches for maximum flavor profile retention.
+        </p>
+
+        <div className="flex gap-4">
+          <Button className="bg-black text-white rounded-none hover:bg-gray-800 font-sans-condensed text-lg uppercase px-8 h-12 tracking-wide">
+            Shop Now
+          </Button>
+          <Button variant="outline" className="border-black text-black rounded-none hover:bg-gray-100 font-sans-condensed text-lg uppercase px-8 h-12 tracking-wide flex gap-2">
+            Our Story <ArrowRight className="w-4 h-4" />
+          </Button>
         </div>
       </div>
     </section>
