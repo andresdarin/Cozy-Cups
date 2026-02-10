@@ -34,7 +34,7 @@ const ReviewsSection = () => {
             {/* 2. Reviews Split Section */}
             <div className="flex flex-col md:flex-row min-h-[500px] border-b border-black">
                 {/* Left: Review Text */}
-                <div className="w-full md:w-1/2 p-12 md:p-24 bg-white flex flex-col items-center justify-center text-center border-r border-black relative grainy">
+            <div className="w-full md:w-1/2 py-24 px-6 md:p-32 bg-white flex flex-col items-center justify-center text-center border-r border-black relative grainy">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const ReviewsSection = () => {
                             ))}
                         </div>
 
-                        <p className="font-sans-condensed text-2xl md:text-3xl font-bold uppercase tracking-tight leading-tight mb-8">
+                        <p className="font-sans-condensed text-2xl md:text-3xl font-bold uppercase tracking-wide leading-relaxed mb-8">
                             "{reviews[0].text}"
                         </p>
 
@@ -66,7 +66,7 @@ const ReviewsSection = () => {
                 </div>
 
                 {/* Right: Product Image */}
-                <div className="w-full md:w-1/2 h-[300px] md:h-auto overflow-hidden bg-off-white flex items-center justify-center p-12 relative grainy">
+                <div className="w-full md:w-1/2 h-[400px] md:h-auto overflow-hidden bg-off-white flex items-center justify-center p-12 relative grainy">
                     <img
                         src="https://images.unsplash.com/photo-1544787210-28271d7b6009?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                         alt="Coffee cup minimal"

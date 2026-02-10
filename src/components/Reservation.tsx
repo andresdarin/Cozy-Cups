@@ -8,7 +8,7 @@ const Reservation = () => {
             <span className="font-mono text-sm uppercase tracking-[0.2em] text-gray-400 mb-6 block">
                 Book a Table
             </span>
-            <h2 className="font-sans-condensed text-6xl md:text-8xl font-bold mb-16 uppercase tracking-tighter leading-none">
+            <h2 className="font-sans-condensed text-6xl md:text-8xl font-bold mb-16 uppercase tracking-wide leading-tight">
                 Reserve Your Spot
             </h2>
 

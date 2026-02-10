@@ -58,7 +58,7 @@ const HeroSlider = () => {
                             </div>
 
                             {/* Right: Content */}
-                            <div className={`w-full md:w-1/2 h-1/2 md:h-full ${slide.color} flex flex-col items-center justify-center p-8 md:p-20 relative grainy`}>
+                            <div className={`w-full md:w-1/2 h-1/2 md:h-full ${slide.color} flex flex-col items-center justify-center py-24 px-6 md:p-32 relative grainy`}>
                                 {/* Badge Overlay */}
                                 <div className="absolute top-10 right-10 md:top-20 md:right-32 w-28 h-28 md:w-36 md:h-36 rounded-full border border-black/10 flex items-center justify-center">
                                     <svg viewBox="0 0 100 100" className="w-full h-full p-3 animate-spin-slow">
@@ -83,7 +83,7 @@ const HeroSlider = () => {
                                         initial={{ y: 20, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.8, delay: 0.2 }}
-                                        className="font-sans-condensed text-7xl md:text-9xl font-extrabold uppercase tracking-tighter leading-[0.85] mb-4"
+                                        className="font-sans-condensed text-7xl md:text-9xl font-extrabold uppercase tracking-wide leading-none mb-4"
                                     >
                                         {slide.title.split(' ').map((word, i) => (
                                             <span key={i} className="block">{word}</span>
@@ -93,7 +93,7 @@ const HeroSlider = () => {
                                         initial={{ y: 20, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.8, delay: 0.4 }}
-                                        className="font-dancing text-3xl md:text-5xl coffee-gold italic mt-4"
+                                        className="font-dancing text-3xl md:text-5xl coffee-gold italic mt-4 leading-relaxed"
                                     >
                                         {slide.subtitle}
                                     </motion.p>

@@ -25,7 +25,7 @@ const News = () => {
   return (
     <section className="py-32 bg-off-white" id="journal">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="font-sans-condensed text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-none mb-20 text-center md:text-left">
+        <h2 className="font-sans-condensed text-6xl md:text-8xl font-bold uppercase tracking-wide leading-tight mb-20 text-center md:text-left">
           The Journal
         </h2>
 
@@ -45,10 +45,10 @@ const News = () => {
                 <span className="font-mono text-xs uppercase tracking-widest text-gray-400 mb-4">
                   {article.date}
                 </span>
-                <h3 className="font-sans-condensed text-4xl md:text-5xl font-bold uppercase tracking-tight mb-4 group-hover:text-gray-600 transition-colors cursor-pointer">
+                <h3 className="font-sans-condensed text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4 group-hover:text-gray-600 transition-colors cursor-pointer">
                   {article.title}
                 </h3>
-                <p className="font-sans text-gray-600 max-w-lg mb-6 leading-relaxed">
+                <p className="font-sans text-gray-600 max-w-lg mb-6 leading-loose">
                   {article.excerpt}
                 </p>
                 <a href="#" className="font-mono text-xs uppercase tracking-widest border-b border-black pb-1 hover:pb-2 transition-all">
