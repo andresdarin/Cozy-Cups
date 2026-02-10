@@ -42,7 +42,7 @@ const HeroSlider = () => {
     }, [emblaApi]);
 
     return (
-        <section className="relative w-full h-[calc(100vh-110px)] mt-[110px] overflow-hidden border-b border-black">
+        <section className="relative w-full h-[calc(100vh-136px)] mt-[136px] overflow-hidden border-b border-black">
             <div className="overflow-hidden h-full" ref={emblaRef}>
                 <div className="flex h-full">
                     {slides.map((slide, index) => (
@@ -60,8 +60,8 @@ const HeroSlider = () => {
                             {/* Right: Content */}
                             <div className={`w-full md:w-1/2 h-1/2 md:h-full ${slide.color} flex flex-col items-center justify-center py-24 px-6 md:p-32 relative grainy`}>
                                 {/* Badge Overlay */}
-                                <div className="absolute top-10 right-10 md:top-20 md:right-32 w-28 h-28 md:w-36 md:h-36 rounded-full border border-black/10 flex items-center justify-center">
-                                    <svg viewBox="0 0 100 100" className="w-full h-full p-3 animate-spin-slow">
+                                <div className="absolute top-10 right-10 md:top-20 md:right-32 w-28 h-28 md:w-36 md:h-36 rounded-full border border-black/10 flex items-center justify-center animate-spin-slow">
+                                    <svg viewBox="0 0 100 100" className="w-full h-full p-3">
                                         <path id={`curve-${index}`} d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
                                         <text className="text-[10px] font-mono uppercase tracking-[0.2em] fill-black">
                                             <textPath href={`#curve-${index}`}>
@@ -69,13 +69,6 @@ const HeroSlider = () => {
                                             </textPath>
                                         </text>
                                     </svg>
-                                    <div className="absolute inset-0 flex items-center justify-center">
-                                        <img
-                                            src="https://api.dicebear.com/7.x/shapes/svg?seed=coffee&backgroundColor=transparent"
-                                            alt="stamp"
-                                            className="w-16 h-16 opacity-10"
-                                        />
-                                    </div>
                                 </div>
 
                                 <div className="max-w-xl text-center md:text-left">
@@ -93,7 +86,7 @@ const HeroSlider = () => {
                                         initial={{ y: 20, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
                                         transition={{ duration: 0.8, delay: 0.4 }}
-                                        className="font-dancing text-3xl md:text-5xl coffee-gold italic mt-4 leading-relaxed"
+                                        className="font-mono text-xs uppercase tracking-[0.3em] text-gray-500 mt-8"
                                     >
                                         {slide.subtitle}
                                     </motion.p>

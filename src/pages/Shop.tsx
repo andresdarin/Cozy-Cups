@@ -6,28 +6,28 @@ import { products } from "@/data/products";
 
 const Shop = () => {
   return (
-    <div className="min-h-screen bg-off-white font-sans text-black selection:bg-black selection:text-white">
+    <div className="min-h-screen bg-off-white font-sans text-black selection:bg-black selection:text-white flex flex-col">
       <Navbar />
       
-      <div className="pt-32 pb-32 px-6 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-            <div>
-                <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 mb-6 block">
-                    Catalog
+      <div className="flex-grow pt-48 pb-32 px-6 max-w-[1600px] mx-auto w-full">
+        <header className="flex flex-col md:flex-row justify-between items-end mb-24 gap-12 border-b border-black/10 pb-12">
+            <div className="space-y-6">
+                <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 block">
+                    Catalog 001
                 </span>
-                <h1 className="font-sans-condensed text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-none">
+                <h1 className="font-sans-condensed text-7xl md:text-9xl font-bold uppercase tracking-tighter leading-[0.85]">
                     Shop <br/> Coffee
                 </h1>
             </div>
-            <div className="flex gap-4 font-mono text-xs uppercase tracking-widest">
-                <button className="border-b border-black pb-1">All</button>
+            <div className="flex flex-wrap gap-8 font-mono text-[10px] md:text-xs uppercase tracking-widest pb-2">
+                <button className="border-b border-black pb-1 transition-all">All Products</button>
                 <button className="text-gray-400 hover:text-black transition-colors">Beans</button>
                 <button className="text-gray-400 hover:text-black transition-colors">Equipment</button>
                 <button className="text-gray-400 hover:text-black transition-colors">Merch</button>
             </div>
-        </div>
+        </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           {products.map((product) => (
             <ProductCard
               key={product.id}
