@@ -6,10 +6,13 @@ import ReviewsSection from "@/components/ReviewsSection";
 import Team from "@/components/Team";
 import Reservation from "@/components/Reservation";
 import News from "@/components/News";
-import Footer from "@/components/Footer";
 import FeaturedRoastsAccordion from "@/components/FeaturedRoastsAccordion";
 import ProductGridSection from "@/components/ProductGridSection";
 import ServicesSection from "@/components/ServicesSection";
+import BaristaSchools from "@/components/BaristaSchools";
+import TrustedSupplies from "@/components/TrustedSupplies";
+import SplitMenu from "@/components/SplitMenu";
+import SocialFooter from "@/components/SocialFooter";
 
 const Index = () => {
   return (
@@ -54,8 +57,11 @@ const Index = () => {
         <Team />
         <Reservation />
         <News />
+        <BaristaSchools />
+        <TrustedSupplies />
+        <SplitMenu />
       </main>
-      <Footer />
+      <SocialFooter />
     </div>
   );
 };

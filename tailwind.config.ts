@@ -22,6 +22,7 @@ export default {
 				'sans': ['Inter', 'sans-serif'],
 				'sans-condensed': ['Bebas Neue', 'sans-serif'],
 				'mono': ['JetBrains Mono', 'monospace'],
+				'dancing': ['Dancing Script', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

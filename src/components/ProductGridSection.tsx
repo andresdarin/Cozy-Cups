@@ -35,15 +35,15 @@ const products = [
 const ProductGridSection = () => {
     return (
         <section className="w-full border-b border-black bg-white">
-            <div className="p-12 md:p-20 border-b border-black">
-                <h2 className="font-sans-condensed text-5xl md:text-7xl font-extrabold uppercase tracking-tighter leading-tight">
+            <div className="py-24 px-6 md:p-32 border-b border-black">
+                <h2 className="font-sans-condensed text-5xl md:text-7xl font-extrabold uppercase tracking-wide leading-tight">
                     THE COFFEE THAT'S RIGHT FOR YOU
                 </h2>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                 {products.map((product) => (
-                    <div key={product.id} className="border-b sm:border-b-0 sm:border-r border-black last:border-r-0 p-8 flex flex-col items-center group cursor-pointer hover:bg-black/5 transition-colors relative">
+                    <div key={product.id} className="border-b sm:border-b-0 sm:border-r border-black last:border-r-0 p-12 flex flex-col items-center group cursor-pointer hover:bg-black/5 transition-colors relative">
                         {product.tag && (
                             <div className={`absolute top-0 right-0 px-4 py-1 font-mono text-[10px] font-bold uppercase tracking-widest ${product.tag === 'SOLD' ? 'bg-black text-white' : 'bg-[#F5E642] text-black'}`}>
                                 {product.tag}

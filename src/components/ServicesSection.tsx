@@ -28,13 +28,13 @@ const ServicesSection = () => {
     return (
         <section className="w-full flex flex-col md:flex-row border-b border-black min-h-[600px]">
             {/* Left Block: Food & Aesthetic */}
-            <div className="w-full md:w-1/2 bg-[#F3EFE0] p-12 md:p-24 flex flex-col justify-between relative grainy border-r border-black overflow-hidden">
+            <div className="w-full md:w-1/2 bg-[#F3EFE0] py-24 px-6 md:p-32 flex flex-col justify-between relative grainy border-r border-black overflow-hidden">
                 <div className="relative z-10">
                     <motion.h2
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="font-sans-condensed text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] mb-12"
+                        className="font-sans-condensed text-6xl md:text-8xl font-black uppercase tracking-wide leading-none mb-12"
                     >
                         SWING BY OUR PLACE <br />
                         WE ALSO HAVE FOOD
@@ -65,13 +65,13 @@ const ServicesSection = () => {
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className="flex-1 p-8 md:p-12 border-b border-black last:border-b-0 flex flex-col md:flex-row justify-between items-start md:items-center group hover:bg-black/5 transition-colors cursor-pointer"
+                        className="flex-1 p-12 md:p-20 border-b border-black last:border-b-0 flex flex-col md:flex-row justify-between items-start md:items-center group hover:bg-black/5 transition-colors cursor-pointer"
                     >
                         <div className="max-w-md">
-                            <h3 className="font-sans-condensed text-2xl md:text-3xl font-bold uppercase tracking-tight mb-2">
+                            <h3 className="font-sans-condensed text-2xl md:text-3xl font-bold uppercase tracking-wide mb-2">
                                 {service.title}
                             </h3>
-                            <p className="font-mono text-xs text-gray-500 leading-relaxed">
+                            <p className="font-mono text-xs text-gray-500 leading-loose">
                                 {service.description}
                             </p>
                         </div>

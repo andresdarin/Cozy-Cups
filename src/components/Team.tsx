@@ -16,11 +16,11 @@ const Team = () => {
                 <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 mb-6 block">
                     Our People
                 </span>
-                <h2 className="font-sans-condensed text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-none">
+                <h2 className="font-sans-condensed text-6xl md:text-8xl font-bold uppercase tracking-wide leading-tight">
                     Meet the <br/> Crew
                 </h2>
             </div>
-            <p className="font-mono text-sm text-gray-600 max-w-sm mb-4 border-l border-black pl-6">
+            <p className="font-mono text-sm text-gray-600 max-w-sm mb-4 border-l border-black pl-6 leading-loose">
                 The passionate individuals behind every cup. Dedicated to the craft and the community.
             </p>
         </div>
@@ -36,7 +36,7 @@ const Team = () => {
                 />
               </div>
               <div>
-                <h3 className="font-sans-condensed text-2xl uppercase font-bold tracking-tight">
+                <h3 className="font-sans-condensed text-2xl uppercase font-bold tracking-wide">
                     {member.name}
                 </h3>
                 <p className="font-mono text-xs text-gray-500 uppercase tracking-widest">
