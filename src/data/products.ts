@@ -8,6 +8,7 @@ export interface Product {
 }
 
 export const products: Product[] = [
+  // BEANS
   {
     id: 1,
     name: "Ethiopian Yirgacheffe",
@@ -40,6 +41,8 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1587734195503-904fca47e0e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     category: "Beans"
   },
+
+  // EQUIPMENT
   {
     id: 5,
     name: "Ceramic V60 Dripper",
@@ -55,5 +58,47 @@ export const products: Product[] = [
     description: "Digital scale with timer for precise brewing measurements.",
     image: "https://images.unsplash.com/photo-1517080315816-62734f664539?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     category: "Equipment"
+  },
+  {
+    id: 7,
+    name: "Chemex Classic",
+    price: 48.00,
+    description: "6-Cup pour-over glass coffeemaker. Elegant design for clear brews.",
+    image: "https://images.unsplash.com/photo-1563242044-640a35e80d46?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "Equipment"
+  },
+  {
+    id: 8,
+    name: "Gooseneck Kettle",
+    price: 75.00,
+    description: "Variable temperature electric kettle for precise pouring.",
+    image: "https://images.unsplash.com/photo-1595928642581-f50f4f3453a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "Equipment"
+  },
+
+  // MERCH
+  {
+    id: 9,
+    name: "Early Birds Tote",
+    price: 15.00,
+    description: "Heavyweight canvas tote bag with our classic logo.",
+    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "Merch"
+  },
+  {
+    id: 10,
+    name: "Barista Apron",
+    price: 35.00,
+    description: "Durable denim apron with leather straps and multiple pockets.",
+    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "Merch"
+  },
+  {
+    id: 11,
+    name: "Enamel Mug",
+    price: 12.00,
+    description: "Classic camp-style enamel mug for your outdoor brews.",
+    image: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    category: "Merch"
   }
 ];
